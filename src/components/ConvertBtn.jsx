@@ -7,15 +7,20 @@ const ConvertBtn = ({ title, convertTo, setNewText }) => {
 
     if (convertTo === "mayusculas") {
       newText = currentText.toUpperCase();
+
     } else if (convertTo === "minusculas") {
       newText = currentText.toLowerCase();
+
     } else if (convertTo === "eliminarespacios") {
-      newText = currentText.replace(/\s+/g, ' ').trim();
+      newText = currentText.replace(/[ \t]+/g, ' ').trim();
+      
     } else if (convertTo === "capitalizar") {
       newText = currentText.toLowerCase().replace(/([.!?])\s*(\w)/g, (match) => match.toUpperCase());
       newText = newText.charAt(0).toUpperCase() + newText.slice(1);
+
     } else {
       newText = currentText;
+
     }
 
     textArea.value = newText;
