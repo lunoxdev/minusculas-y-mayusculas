@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/layout.astro";
+import TextArea from "../components/TextArea.jsx";
+---
+
+<Layout>
+  <div class="text-center">
+    <h1 class="text-2xl sm:text-4xl">
+      CONVERTIDOR<br /> DE <br />MAYÚSCULAS A MINÚSCULAS
+    </h1>
+    <p class="text-sm mt-3 text-[#888888]">
+      ¿Necesitas cambiar el formato de tu texto a mayúsculas o minúsculas? ¡No
+      busques más! <br /> Nuestra página web de conversión te ofrece una
+      solución perfecta y eficiente para ti, ya que no solo podrás realizar esta
+      conversión en cuestión de segundos, sino que también te brindamos otras
+      opciones útiles. Además, nuestra herramienta es completamente gratuita y
+      fácil de usar. ¡Descubre la diferencia!
+    </p>
+  </div>
+  <section>
+    <TextArea client:load />
+  </section>
+</Layout>

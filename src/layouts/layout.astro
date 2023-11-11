@@ -1,0 +1,34 @@
+---
+import "../styles/global.css";
+
+const metadata = {
+  title:
+    "Convierta su texto a mayúsculas o minúsculas en cuestión de segundos con nuestra herramienta en línea.",
+  description:
+    "Convierte tu texto a mayúsculas o minúsculas en segundos con nuestro convertor en línea. Ahorra tiempo y esfuerzo con nuestra herramienta rápida, fácil de usar y eficiente",
+  keywords:
+    "convertir, texto, mayúsculas, minúsculas, conversor en línea, rápido, fácil de usar, eficiente, herramienta en linea, simple, cambiar.",
+};
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{metadata.title}</title>
+    <meta name="description" content={metadata.description} />
+    <meta name="keywords" content={metadata.keywords} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://minusculasamayusculas.com/" />
+    <meta property="og:title" content={metadata.title} />
+    <meta property="og:description" content={metadata.description} />
+    <meta property="og:image" content="/logo.webp" />
+    <meta property="og:url" content="https://minusculasamayusculas.com" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="max-h-screen flex justify-center items-center mt-3 sm:mt-14 p-5">
+    <main class="max-w-screen-sm space-y-6">
+      <slot />
+    </main>
+  </body>
+</html>
