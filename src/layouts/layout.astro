@@ -5,9 +5,11 @@ const metadata = {
   title:
     "Convierta su texto a mayúsculas o minúsculas en cuestión de segundos con nuestra herramienta en línea.",
   description:
-    "Convierte tu texto a mayúsculas o minúsculas en segundos con nuestro convertor en línea. Ahorra tiempo y esfuerzo con nuestra herramienta rápida, fácil de usar y eficiente",
+    "Convierte tu texto a mayúsculas o minúsculas en segundos con nuestro conversor en línea. Ahorra tiempo y esfuerzo con nuestra herramienta rápida, fácil de usar y eficiente.",
   keywords:
-    "convertir, texto, mayúsculas, minúsculas, conversor en línea, rápido, fácil de usar, eficiente, herramienta en linea, simple, cambiar.",
+    "convertir, texto, mayúsculas, minúsculas, conversor en línea, rápido, fácil de usar, eficiente, herramienta en línea, simple, cambiar",
+  url: "https://minusculasamayusculas.com/",
+  urlimg: "https://minusculasamayusculas/favicon.svg",
 };
 ---
 
@@ -19,12 +21,27 @@ const metadata = {
     <meta name="description" content={metadata.description} />
     <meta name="keywords" content={metadata.keywords} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="canonical" href="https://minusculasamayusculas.com/" />
+    <link rel="canonical" href={metadata.url} />
     <meta property="og:title" content={metadata.title} />
     <meta property="og:description" content={metadata.description} />
-    <meta property="og:image" content="/logo.webp" />
-    <meta property="og:url" content="https://minusculasamayusculas.com" />
+    <meta property="og:image" content={metadata.urlimg} />
+    <meta property="og:url" content={metadata.url} />
     <meta property="og:type" content="website" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content={metadata.url} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={metadata.description} />
+    <meta property="og:description" content={metadata.description} />
+    <meta property="og:image" content={metadata.urlimg} />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content={metadata.url} />
+    <meta property="twitter:url" content={metadata.url} />
+    <meta name="twitter:title" content={metadata.description} />
+    <meta name="twitter:description" content={metadata.description} />
+    <meta name="twitter:image" content={metadata.urlimg} />
   </head>
   <body class="max-h-screen flex justify-center items-center mt-3 sm:mt-14 p-5">
     <main class="max-w-screen-sm space-y-6">

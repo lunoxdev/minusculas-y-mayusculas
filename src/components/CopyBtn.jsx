@@ -21,9 +21,13 @@ const CopyBtn = ({ textCopied }) => {
       <button
         onClick={handleCopyText}
         type="button"
+        aria-label="Copiar texto"
         className="inline-flex justify-center items-center p-2 text-white rounded cursor-pointer hover:bg-gray-600"
       >
-        {copied && <span className="absolute mr-36 text-xs whitespace-nowrap hover:text-n">¡Texto copiado!</span>}
+        {copied && 
+        <span className="absolute mr-36 text-xs whitespace-nowrap hover:text-n">
+          ¡Texto copiado!
+        </span>}
         <svg
           width="16"
           height="16"
