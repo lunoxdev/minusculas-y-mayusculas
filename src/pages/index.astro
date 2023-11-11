@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/layout.astro";
 import TextArea from "../components/TextArea.jsx";
+import BuyMeACoffeBtn from "../components/BuyMeACoffeBtn.astro";
 ---
 
 <Layout>
@@ -20,4 +21,7 @@ import TextArea from "../components/TextArea.jsx";
   <section>
     <TextArea client:load />
   </section>
+  <div class="flex justify-center">
+    <BuyMeACoffeBtn client:load />
+  </div>
 </Layout>
