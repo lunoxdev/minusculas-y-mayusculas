@@ -1,13 +1,14 @@
 ---
 import "../styles/global.css";
+import BuyMeACoffeList from "../components/BuyMeACoffeList.astro";
 
 const metadata = {
   title:
     "Convierta su texto a mayúsculas o minúsculas en cuestión de segundos con nuestra herramienta en línea.",
   description:
-    "Convierte tu texto a mayúsculas o minúsculas en segundos con nuestro conversor en línea. Ahorra tiempo y esfuerzo con nuestra herramienta rápida, fácil de usar y eficiente.",
+    "Convierte de Texto: Convierte Fácilmente Minúsculas en Mayúsculas y Viceversa. Herramienta en línea gratuita para cambiar el formato de texto a mayúsculas y minúsculas. ¡Optimiza, edítalo y personalízalo según tus necesidades! Cambia letras a mayúsculas o minúsculas en segundos.",
   keywords:
-    "convertir, texto, mayúsculas, minúsculas, conversor en línea, rápido, fácil de usar, eficiente, herramienta en línea, simple, cambiar",
+    "convertir texto, mayúsculas, minúsculas, conversor en línea, convertir mayúsculas a minúsculas, convertir minúsculas a mayúsculas, conversor de texto en línea, herramienta en línea, simple, cambiar",
   url: "https://minusculasymayusculas.com/",
   urlimg: "https://minusculasymayusculas.com/logo.png",
 };
@@ -47,9 +48,14 @@ const metadata = {
     <meta name="twitter:description" content={metadata.description} />
     <meta name="twitter:image" content={metadata.urlimg} />
   </head>
-  <body class="max-h-screen flex justify-center items-center mt-3 sm:mt-10 p-5">
-    <main class="max-w-screen-sm space-y-6">
-      <slot />
-    </main>
+  <body class="max-h-screen flex justify-center items-center mt-2 sm:mt-5 p-4">
+    <div class="max-w-screen-sm space-y-5">
+      <main>
+        <slot />
+      </main>
+      <footer class="flex justify-center items-center p-2">
+        <BuyMeACoffeList />
+      </footer>
+    </div>
   </body>
 </html>

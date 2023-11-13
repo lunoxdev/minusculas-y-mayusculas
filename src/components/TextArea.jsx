@@ -5,13 +5,11 @@ import ConvertBtn from "../components/ConvertBtn";
 const TextArea = () => {
   const [newText, setNewText] = useState("");
   const [lineCount, setLineCount] = useState(1);
-  // const [modifiedText, setModifiedText] = useState("");
 
   // Guarda el nuevo valor en modifiedText
   const textvalue = (e) => {
     const dinamicText = e.target.value;
     setNewText(dinamicText);
-    // setModifiedText(dinamicText);
 
     // Contador de lineas
     const lines = dinamicText.split(/\r\n|\r|\n/);
@@ -39,21 +37,24 @@ const TextArea = () => {
 
   return (
     <>
-      <form className="w-full mb-4 border rounded-lg bg-black border-gray-600">
+      <form className="w-full mt-7 border rounded-lg bg-black border-gray-600">
         <div className="px-4 py-2 rounded-t-lg bg-[#161616]">
           <textarea
             rows="4"
-            className="w-full h-44 text-sm text-[#9c9c9c] bg-[#161616] outline-none p-1"
+            className="w-full h-40 text-sm text-[#9c9c9c] bg-[#161616] outline-none p-1"
             placeholder="Convierta su texto pegándolo aquí..."
             onChange={textvalue}
             spellCheck="true"
           ></textarea>
         </div>
         <div className="flex items-center justify-between px-3 py-2 border-t border-gray-600">
-          <p className="text-xs text-[#7c7c7c]">
-            {`${lettersCount} ${lettersCount === 1 ? "letra" : "letras"} | ${wordsCount} ${
-              wordsCount === 1 ? "palabra" : "palabras"
-            } | ${lineCount} ${lineCount === 1 ? "línea" : "líneas"}`}
+          <p className="text-xs text-gray-500">
+            <span className="text-white">{lettersCount}</span>{" "}
+            {`${lettersCount === 1 ? "Letra" : "Letras"} | `}
+            <span className="text-white">{wordsCount}</span>{" "}
+            {`${wordsCount === 1 ? "Palabra" : "Palabras"} | `}
+            <span className="text-white">{lineCount}</span>{" "}
+            {`${lineCount === 1 ? "Línea" : "Líneas"}`}
           </p>
           <CopyBtn textCopied={newText} />
         </div>

@@ -1,27 +1,25 @@
 ---
 import Layout from "../layouts/layout.astro";
 import TextArea from "../components/TextArea.jsx";
-import BuyMeACoffeBtn from "../components/BuyMeACoffeBtn.astro";
 ---
 
 <Layout>
-  <div class="text-center">
-    <h1 class="text-2xl sm:text-4xl">
-      CONVERTIDOR<br /> DE <br />MAYÚSCULAS A MINÚSCULAS
+  <div class="text-center mb-5">
+    <h1 class="text-xl sm:text-4xl">
+      CONVERTIDOR DE <br />MAYÚSCULAS A MINÚSCULAS
     </h1>
-    <p class="text-sm mt-3 text-[#888888]">
-      ¿Necesitas cambiar el formato de tu texto a mayúsculas o minúsculas? ¡No
-      busques más! <br /> Nuestra página web de conversión te ofrece una
-      solución perfecta y eficiente para ti, ya que no solo podrás realizar esta
-      conversión en cuestión de segundos, si no que también te brindamos otras
-      opciones útiles. Además, nuestra herramienta es completamente gratuita y
-      fácil de usar. ¡Descubre la diferencia!
+    <p class="text-sm mt-3 text-[#9c9c9c]">
+      ¿Necesitas convertir tu texto a mayúsculas o minúsculas?<br /> ¡No busques
+      más! <br /> Convierte fácilmente mayúsculas a minúsculas y viceversa con
+      nuestro conversor de texto en línea. Cambia el formato de tu texto de
+      forma rápida y sencilla, proporcionando una edición precisa para tus
+      necesidades. Nuestra herramienta de edición de texto permite transformar
+      mayúsculas a minúsculas y viceversa en un instante. Simplifica tus tareas
+      de formato de texto y consigue el resultado que deseas con nuestro
+      conversor de texto. <strong>¡Pruébala ahora!</strong>
     </p>
   </div>
   <section>
     <TextArea client:load />
   </section>
-  <div class="flex justify-center">
-    <BuyMeACoffeBtn client:load />
-  </div>
 </Layout>
