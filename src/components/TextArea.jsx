@@ -38,17 +38,17 @@ const TextArea = () => {
   return (
     <>
       <form className="w-full mt-7 border rounded-lg bg-black border-gray-600">
-        <div className="px-4 py-2 rounded-t-lg bg-[#161616]">
+        <div className="px-4 py-2 rounded-t-lg bg-[#121212]">
           <textarea
             rows="4"
-            className="w-full h-40 text-sm text-[#9c9c9c] bg-[#161616] outline-none p-1"
+            className="w-full h-40 text-sm bg-[#121212] outline-none p-1"
             placeholder="Convierta su texto pegándolo aquí..."
             onChange={textvalue}
             spellCheck="true"
           ></textarea>
         </div>
         <div className="flex items-center justify-between px-3 py-2 border-t border-gray-600">
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-gray-400">
             <span className="text-white">{lettersCount}</span>{" "}
             {`${lettersCount === 1 ? "Letra" : "Letras"} | `}
             <span className="text-white">{wordsCount}</span>{" "}
@@ -59,7 +59,7 @@ const TextArea = () => {
           <CopyBtn textCopied={newText} />
         </div>
       </form>
-      <div className="mt-7 flex flex-nowrap gap-2">
+      <div className="mt-8 flex flex-nowrap gap-2">
         <ConvertBtn
           title="Convertir a Mayúscula"
           convertTo="mayusculas"
