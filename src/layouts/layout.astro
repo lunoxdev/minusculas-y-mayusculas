@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import BuyMeACoffeList from "../components/BuyMeACoffeList.astro";
+import Hotjar from "../components/Hotjar.astro";
 
 const metadata = {
   title:
@@ -44,6 +45,7 @@ const metadata = {
     <meta name="twitter:title" content={metadata.description} />
     <meta name="twitter:description" content={metadata.description} />
     <meta name="twitter:image" content={metadata.urlimg} />
+    <Hotjar />
   </head>
   <body class="max-h-screen flex justify-center items-center mt-2 sm:mt-5 p-4">
     <div class="max-w-screen-sm space-y-5">
