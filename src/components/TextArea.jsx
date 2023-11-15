@@ -37,11 +37,11 @@ const TextArea = () => {
 
   return (
     <>
-      <form className="w-full mt-7 border rounded-lg bg-black border-gray-600">
+      <form className="w-full mt-5 border rounded-lg bg-black border-gray-600">
         <div className="px-4 py-2 rounded-t-lg bg-[#121212]">
           <textarea
             rows="4"
-            className="w-full h-40 text-sm bg-[#121212] outline-none p-1"
+            className="w-full h-36 text-sm bg-[#121212] outline-none p-1"
             placeholder="Convierta su texto pegándolo aquí..."
             onChange={textvalue}
             spellCheck="true"
@@ -59,7 +59,7 @@ const TextArea = () => {
           <CopyBtn textCopied={newText} />
         </div>
       </form>
-      <div className="mt-8 flex flex-nowrap gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-5" >
         <ConvertBtn
           title="Convertir a Mayúscula"
           convertTo="mayusculas"
