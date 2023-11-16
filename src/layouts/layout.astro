@@ -47,12 +47,12 @@ const metadata = {
     <meta name="twitter:description" content={metadata.description} />
     <meta name="twitter:image" content={metadata.urlimg} />
   </head>
-  <body class="max-h-screen flex justify-center mt-3 sm:mt-10 p-3">
-    <div class="max-w-screen-sm">
+  <body class="mmin-h-screen flex justify-center mt-3 sm:mt-10 p-3">
+    <div class="max-w-screen-sm space-y-8">
       <main>
         <slot />
       </main>
-      <footer class="flex justify-center items-center mt-6">
+      <footer class="flex justify-center items-center">
         <BuyMeACoffeList />
       </footer>
     </div>
