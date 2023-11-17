@@ -4,26 +4,86 @@ import TextArea from "../components/TextArea.jsx";
 ---
 
 <Layout>
-  <div class="text-center space-y-2 mb-5">
-    <h1 class="text-xl sm:text-2xl">
-      CONVERTIR <br />MINÚSCULAS A MAYÚSCULAS O VICEVERSA
+  <div class="text-start space-y-2 mb-10">
+    <h1 class="text-lg text-center sm:text-2xl">
+      CONVERTIDOR DE <br />MAYÚSCULAS Y MINÚSCULAS ONLINE
     </h1>
     <p class="text-sm mt-3 text-[#9c9c9c]">
-      Convierte fácilmente mayúsculas a minúsculas y viceversa con nuestro
-      convertidor de texto online. Cambia el formato de tu texto de forma rápida
-      y sencilla, proporcionando una edición precisa para tus necesidades.
+      En el vasto mundo digital, la capacidad de manipular el formato del texto
+      es esencial. Con solo un clic, puedes cambiar de mayúsculas a minúsculas,
+      o viceversa, utilizando este sencillo convertidor de texto.
     </p>
-    <p class="text-sm text-[#9c9c9c]">
-      Nuestra herramienta de edición de texto en línea permite cambiar
-      mayúsculas a minúsculas y viceversa en un instante. Simplifica tus tareas
-      de formato de texto y consigue el resultado que deseas con nuestro
-      conversor de texto.
+    <p class="text-sm mt-3 text-[#9c9c9c]">
+      Esta herramienta online gratuita te permite convertir todo a mayúsculas o
+      pasar de minúscula a mayúscula con facilidad. Puedes experimentar con la
+      transformación de tu texto online, alterando la letra a mayúsculas o a
+      minúsculas según tus preferencias. El uso de mayúsculas y minúsculas es
+      fundamental para una presentación estéticamente agradable, y con un
+      eficiente convertidor de letra, puedes lograrlo rápidamente. Así, cambiar
+      mayúsculas a minúsculas online se convierte en una tarea sencilla.
     </p>
-    <p class="text-sm text-[#9c9c9c]">
-      <strong>¡No busques más, pruébala ahora!</strong>
+    <p class="text-sm mt-3 text-[#9c9c9c]">
+      Para ti, tan solo un par de clics pueden poner texto en mayúsculas o
+      convertir minúsculas a mayúsculas, brindándote el control total sobre la
+      estética de tu contenido. ¡Experimenta con el poder de la transformación
+      de texto a través de estas herramientas online de fácil acceso!
     </p>
   </div>
   <section>
     <TextArea client:load />
   </section>
+  <div class="text-start mt-7 mb-3">
+    <ul class="list-disc space-y-2 p-4">
+      <li class="text-sm text-[#9c9c9c]">
+        <span class="text-white">Convertir a Mayúscula:</span> Este botón
+        realiza la acción de cambiar todo el texto seleccionado a letras
+        mayúsculas, es decir, convierte todas las letras del texto a su forma
+        capital.
+      </li>
+
+      <li class="text-sm text-[#9c9c9c]">
+        <span class="text-white">Convertir a Minúscula:</span> Este botón lleva
+        a cabo la tarea inversa al primero, transformando todas las letras del
+        texto seleccionado a su forma minúscula.
+      </li>
+
+      <li class="text-sm text-[#9c9c9c]">
+        <span class="text-white">Eliminar espacios extra:</span> Al presionar
+        este botón, se eliminan los espacios adicionales entre palabras en el
+        texto seleccionado, asegurando un formato más limpio y uniforme.
+      </li>
+
+      <li class="text-sm text-[#9c9c9c]">
+        <span class="text-white">Capitalizar el texto:</span> Este botón realiza
+        la capitalización del texto seleccionado, convirtiendo la primera letra
+        de cada palabra a mayúscula y el resto a minúscula, lo que suele ser
+        útil para títulos o encabezados.
+      </li>
+      <li class="text-sm text-[#9c9c9c]">
+        <span class="text-white">Contador de Letras:</span> Este contador
+        muestra la cantidad total de letras en el texto. Cada carácter,
+        incluyendo letras, números y símbolos, se cuenta individualmente.
+      </li>
+      <li class="text-sm text-[#9c9c9c]">
+        <span class="text-white">Contador de Palabras:</span> Este contador
+        indica la cantidad total de palabras en el texto. Se considera una
+        palabra como cualquier secuencia de caracteres separada por espacios,
+        tabulaciones o saltos de línea.
+      </li>
+      <li class="text-sm text-[#9c9c9c]">
+        <span class="text-white">Contador de Líneas:</span> Este contador cuenta
+        la cantidad total de líneas en el texto. Una línea se define como una
+        secuencia de caracteres que termina con un salto de línea. Incluso si el
+        texto tiene una sola palabra en varias líneas, cada línea se cuenta por
+        separado.
+      </li>
+    </ul>
+
+    <p class="text-sm mt-3 mb-5 text-[#9c9c9c]">
+      Así, al combinar estas funciones, puedes realizar ajustes precisos en el
+      formato y presentación de tu texto, asegurando coherencia y legibilidad
+      según tus necesidades específicas.
+    </p>
+    <hr />
+  </div>
 </Layout>

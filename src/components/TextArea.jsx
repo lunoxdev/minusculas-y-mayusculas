@@ -41,7 +41,7 @@ const TextArea = () => {
         <div className="px-4 py-2 rounded-t-lg bg-[#121212]">
           <textarea
             rows="4"
-            className="w-full h-36 text-sm bg-[#121212] outline-none p-1"
+            className="w-full h-44 text-sm bg-[#121212] outline-none p-1"
             placeholder="Convierta su texto pegándolo aquí..."
             onChange={textvalue}
             spellCheck="true"
