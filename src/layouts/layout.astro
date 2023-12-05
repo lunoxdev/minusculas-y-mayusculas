@@ -4,9 +4,9 @@ import BuyMeACoffeList from "../components/BuyMeACoffeList.astro";
 import Hotjar from "../components/Hotjar.astro";
 
 const metadata = {
-  title: "Convertidor de texto de mayúsculas a minúsculas online",
+  title: "Conversor de Texto: Mayúsculas a Minúsculas y Viceversa | Herramienta online",
   description:
-    "Convertir mayúsculas a minúsculas y minúsculas a mayúsculas con nuestro convertidor en línea nunca fue tan fácil para ti. Herramienta para cambiar mayúsculas y minúsculas según tus necesidades de manera gratuita. ¿Necesitas letras en mayúsculas? Utiliza nuestro convertidor de letras para transcribir y transformar texto con tan solo unos clics.",
+    "Con nuestra aplicación web, podrás convertir texto entre mayúsculas y minúsculas de manera sencilla y eficiente. Simplemente introduce el texto deseado y selecciona la opción deseada de nuestra interfaz para llevar a cabo la conversión deseada.",
   url: "https://minusculasymayusculas.com/",
   urlimg: "https://minusculasymayusculas.com/logo.png",
 };
@@ -46,8 +46,8 @@ const metadata = {
     <meta name="twitter:description" content={metadata.description} />
     <meta name="twitter:image" content={metadata.urlimg} />
   </head>
-  <body class="mmin-h-screen flex justify-center mt-3 sm:mt-8 p-3">
-    <div class="max-w-screen-sm space-y-8">
+  <body class="mmin-h-screen flex justify-center items-center mt-3 sm:mt-8 p-3">
+    <div class="max-w-screen-sm">
       <main>
         <slot />
       </main>
