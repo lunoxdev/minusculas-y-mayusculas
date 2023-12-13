@@ -7,20 +7,17 @@ const ConvertBtn = ({ title, convertTo, setNewText }) => {
 
     if (convertTo === "mayusculas") {
       newText = currentText.toUpperCase();
-
     } else if (convertTo === "minusculas") {
       newText = currentText.toLowerCase();
-
     } else if (convertTo === "eliminarespacios") {
-      newText = currentText.replace(/[ \t]+/g, ' ').trim();
-      
+      newText = currentText.replace(/[ \t]+/g, " ").trim();
     } else if (convertTo === "capitalizar") {
-      newText = currentText.toLowerCase().replace(/([.!?])\s*(\w)/g, (match) => match.toUpperCase());
+      newText = currentText
+        .toLowerCase()
+        .replace(/([.!?])\s*(\w)/g, (match) => match.toUpperCase());
       newText = newText.charAt(0).toUpperCase() + newText.slice(1);
-
     } else {
       newText = currentText;
-
     }
 
     textArea.value = newText;
@@ -32,7 +29,7 @@ const ConvertBtn = ({ title, convertTo, setNewText }) => {
     <>
       <button
         onClick={handleClick}
-        className="py-3 px-1 w-full text-xs rounded-md border-t-2 border-b-2 border-gray-600 hover:bg-gray-800"
+        className="py-3 px-1 w-full text-sm rounded-md border-t-2 border-b-2 border-gray-600 hover:bg-gray-800"
       >
         {title}
       </button>

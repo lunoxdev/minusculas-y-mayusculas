@@ -48,6 +48,7 @@ const TextArea = () => {
           ></textarea>
         </div>
         <div className="flex items-center justify-between px-3 py-2 border-t border-gray-600">
+          <CopyBtn textCopied={newText} />
           <p className="text-xs text-gray-400">
             <span className="text-white">{lettersCount}</span>{" "}
             {`${lettersCount === 1 ? "Letra" : "Letras"} | `}
@@ -56,7 +57,6 @@ const TextArea = () => {
             <span className="text-white">{lineCount}</span>{" "}
             {`${lineCount === 1 ? "Línea" : "Líneas"}`}
           </p>
-          <CopyBtn textCopied={newText} />
         </div>
       </form>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-7">
