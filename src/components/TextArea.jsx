@@ -35,17 +35,30 @@ const TextArea = () => {
   const lettersCount = countLetters(newText);
   const wordsCount = countWords(newText);
 
+  const handleClear = () => {
+    setNewText("");
+  };
+
   return (
     <>
-      <form className="w-full mt-5 border rounded-lg bg-black border-gray-600">
+      <form className="w-full mt-5 border rounded-lg bg-black border-gray-600 relative">
         <div className="px-4 py-2 rounded-t-lg bg-[#121212]">
           <textarea
             rows="4"
-            className="w-full h-40 text-sm bg-[#121212] outline-none p-1"
+            className="w-full h-40 text-sm bg-[#121212] outline-none pr-14 py-3"
             placeholder="Convierta su texto pegándolo aquí..."
             onChange={textvalue}
             spellCheck="true"
+            value={newText}
           ></textarea>
+          {newText && (
+            <button
+              className="absolute top-1 right-0 mt-2 mr-2 px-2 py-1 border text-white text-xs rounded"
+              onClick={handleClear}
+            >
+              Borrar
+            </button>
+          )}
         </div>
         <div className="flex items-center justify-between px-3 py-2 border-t border-gray-600">
           <CopyBtn textCopied={newText} />
