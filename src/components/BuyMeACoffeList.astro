@@ -1,6 +1,6 @@
 ---
 import BuyMeACoffeBtn from "../components/BuyMeACoffeBtn.astro";
-import logo from "../assets/lunox-logo.png";
+import logo from "../assets/lunox-logo.svg";
 import { Image } from "astro:assets";
 ---
 
@@ -9,8 +9,8 @@ import { Image } from "astro:assets";
     <span class="opacity-75 text-base"> Cómprame un café: </span>
     <BuyMeACoffeBtn url="https://ko-fi.com/lunox" title="ko-fi.com" />
   </section>
-  <figure class="flex flex-col items-center justify-center mt-5">
-    <Image src={logo} alt="My logo" width="40" height="40" loading="lazy" />
+  <figure class="flex flex-col items-center justify-center mt-2">
+    <Image src={logo} alt="My logo" width="60" height="60" loading="lazy"/>
     <figcaption class="font-thin text-xs">Lunox</figcaption>
   </figure>
 </div>
