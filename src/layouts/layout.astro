@@ -4,11 +4,16 @@ import BuyMeACoffeList from "../components/BuyMeACoffeList.astro";
 import Hotjar from "../components/Hotjar.astro";
 
 const metadata = {
-  title: "Moderno convertidor de texto: Mayúsculas a Minúsculas o viceversa online",
+  title: "Convertidor de Texto: Mayúsculas a Minúsculas | Herramienta Online",
   description:
-    "¿Necesitas convertir o pasar texto de mayúsculas a minúsculas o viceversa? Nuestra moderna herramienta online hace que esta tarea sea fácil. Simplemente introduce el texto deseado y selecciona la opción adecuada en nuestra interfaz para llevar a cabo la conversión deseada.",
+    "Convierte texto a mayúsculas o minúsculas fácilmente con nuestra herramienta online. Introduce tu texto y elige la opción para una conversión rápida y sencilla. ¡Haz clic ahora!",
   url: "https://minusculasymayusculas.com/",
   urlimg: "https://minusculasymayusculas.com/logo.png",
+  ogdescription: "Convierte texto a mayúsculas o minúsculas con nuestra herramienta online",
+  type: "website",
+  sitename: "Mayúsculas a Minúsculas",
+  creator: "Lunox | Moises Obando",
+
 };
 ---
 
@@ -19,28 +24,32 @@ const metadata = {
     <title>{metadata.title}</title>
     <meta name="description" content={metadata.description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg">
     <link rel="canonical" href={metadata.url} />
+    <link hreflang="es" href={metadata.url}>
     <Hotjar />
     <meta property="og:title" content={metadata.title} />
     <meta property="og:description" content={metadata.description} />
     <meta property="og:image" content={metadata.urlimg} />
     <meta property="og:url" content={metadata.url} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={metadata.type} />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content={metadata.url} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={metadata.type} />
     <meta property="og:title" content={metadata.description} />
     <meta property="og:description" content={metadata.description} />
     <meta property="og:image" content={metadata.urlimg} />
+    <meta property="og:site_name" content={metadata.sitename} />
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content={metadata.ogdescription} />
     <meta property="twitter:domain" content={metadata.url} />
     <meta property="twitter:url" content={metadata.url} />
-    <meta name="twitter:title" content={metadata.description} />
+    <meta name="twitter:title" content={metadata.title} />
     <meta name="twitter:description" content={metadata.description} />
     <meta name="twitter:image" content={metadata.urlimg} />
+    <meta name="twitter:creator" content={metadata.creator}>
   </head>
   <body class="min-h-screen flex justify-center items-center p-3">
     <div class="max-w-full sm:max-w-screen-md mx-auto">
