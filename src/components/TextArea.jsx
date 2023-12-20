@@ -40,7 +40,7 @@ const TextArea = () => {
   };
 
   return (
-    <>
+    <div>
       <form className="w-full mt-5 border rounded-lg bg-black border-gray-600 relative">
         <div className="px-4 py-2 rounded-t-lg bg-[#121212]">
           <textarea
@@ -94,7 +94,7 @@ const TextArea = () => {
           setNewText={setNewText}
         />
       </div>
-    </>
+    </div>
   );
 };
 
