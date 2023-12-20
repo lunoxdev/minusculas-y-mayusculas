@@ -45,7 +45,7 @@ const TextArea = () => {
         <div className="px-4 py-2 rounded-t-lg bg-[#121212]">
           <textarea
             rows="4"
-            className="w-full h-40 text-sm bg-[#121212] outline-none pr-14 py-3"
+            className="w-full h-40 text-sm bg-[#121212] outline-none pr-24 py-3"
             placeholder="Convierta su texto pegándolo aquí..."
             onChange={textvalue}
             spellCheck="true"
@@ -53,7 +53,7 @@ const TextArea = () => {
           ></textarea>
           {newText && (
             <button
-              className="absolute top-1 right-0 mt-2 mr-2 px-2 py-1 border text-white text-xs rounded"
+              className="absolute top-1 right-0 mt-2 mr-9 px-2 py-1 border text-white text-xs rounded hover:bg-gray-800"
               onClick={handleClear}
             >
               Borrar
