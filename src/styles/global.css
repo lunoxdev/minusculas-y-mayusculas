@@ -1,7 +1,7 @@
 body {
-  overflow: hidden;
-  background: linear-gradient(to right, #438e96, #2d464c);
-  color: #ddeff0;
+  overflow: scroll;
+  background: linear-gradient(to right, #3b757f, #1a2c32);
+  color: white;
 }
 
 h1 {

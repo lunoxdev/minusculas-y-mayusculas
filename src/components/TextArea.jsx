@@ -42,11 +42,11 @@ const TextArea = () => {
 
   return (
     <div>
-      <form className="w-full mt-5 rounded-lg bg-[#1A2C32] border border-[#356169] relative">
-        <div className="px-4 py-2 rounded-t-lg bg-[#3B757F]">
+      <form className="w-full mt-5 rounded-lg bg-[#1a2c32] shadow-[#356169] shadow-lg relative">
+        <div className="px-4 py-2 rounded-t-lg bg-[#1e3239] border-b-2 border-[#325158]">
           <textarea
             rows="4"
-            className="w-full h-44 text-sm outline-none pr-24 py-3 bg-[#3B757F] placeholder:text-[#5FAAB1]"
+            className="w-full h-52 text-sm outline-none pr-24 py-3 bg-[#1e3239] placeholder:text-[#ddeff0]"
             placeholder="Coloque su texto aquí..."
             onChange={textvalue}
             spellCheck="true"
@@ -54,7 +54,7 @@ const TextArea = () => {
           ></textarea>
           {newText && (
             <button
-              className="absolute top-1 right-0 mt-2 mr-8 px-2 py-1 border-t-2 border-b-2 border-[#ddeff0] text-xs rounded hover:bg-[#1A2C32]"
+              className="absolute top-1 right-0 mt-2 mr-8 px-2 py-1 border-t-2 border-b-2 border-[#ddeff0] text-xs rounded hover:bg-[#325158]"
               onClick={handleClear}
             >
               Borrar
