@@ -29,7 +29,7 @@ const ConvertBtn = ({ title, convertTo, setNewText }) => {
     <>
       <button
         onClick={handleClick}
-        className="py-3 w-full text-sm rounded-md border-t-2 border-b-2 border-[#5FAAB1] hover:scale-105 hover:font-bold shadow-[#356169] shadow-sm bg-gradient-to-r from-[#1A2C32] to-[#2D464C]"
+        className="py-3 w-full text-sm rounded-md border-t-2 border-b-2 border-[#3B757F] hover:scale-105 hover:font-bold bg-gradient-to-r from-[#1A2C32] to-[#2D464C]"
       >
         {title}
       </button>
