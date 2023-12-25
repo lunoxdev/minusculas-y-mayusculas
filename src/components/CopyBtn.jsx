@@ -23,10 +23,10 @@ const CopyBtn = ({ textCopied }) => {
         onClick={handleCopyText}
         type="button"
         aria-label="Copiar texto"
-        className="inline-flex gap-2 text-sm justify-center items-center p-2 text-white rounded cursor-pointer hover:bg-gray-800"
+        className="flex gap-1 text-sm justify-center items-center py-2 px-1 rounded font-bold hover:bg-[#2D464C]"
       >
         {copied && (
-          <span className="absolute ml-48 text-xs whitespace-nowrap hover:text-n">
+          <span className="absolute ml-48 text-xs whitespace-nowrap">
             ¡Copiado!
           </span>
         )}

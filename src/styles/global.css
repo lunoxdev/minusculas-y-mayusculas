@@ -1,9 +1,9 @@
-@import "@fontsource-variable/montserrat";
-
 body {
-  font-family: "Montserrat Variable", system-ui, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: black;
-  color: white;
+  overflow: hidden;
+  background: linear-gradient(to right, #438e96, #2d464c);
+  color: #ddeff0;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }

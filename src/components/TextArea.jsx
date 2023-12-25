@@ -4,7 +4,7 @@ import ConvertBtn from "../components/ConvertBtn";
 
 const TextArea = () => {
   const [newText, setNewText] = useState("");
-  const [lineCount, setLineCount] = useState(1);
+  const [lineCount, setLineCount] = useState(0);
 
   // Guarda el nuevo valor en modifiedText
   const textvalue = (e) => {
@@ -37,38 +37,38 @@ const TextArea = () => {
 
   const handleClear = () => {
     setNewText("");
+    setLineCount(0);
   };
 
   return (
     <div>
-      <form className="w-full mt-5 border rounded-lg bg-black border-gray-600 relative">
-        <div className="px-4 py-2 rounded-t-lg bg-[#121212]">
+      <form className="w-full mt-5 rounded-lg bg-[#1A2C32] border border-[#356169] relative">
+        <div className="px-4 py-2 rounded-t-lg bg-[#3B757F]">
           <textarea
             rows="4"
-            className="w-full h-40 text-sm bg-[#121212] outline-none pr-24 py-3"
-            placeholder="Convierta su texto pegándolo aquí..."
+            className="w-full h-44 text-sm outline-none pr-24 py-3 bg-[#3B757F] placeholder:text-[#5FAAB1]"
+            placeholder="Coloque su texto aquí..."
             onChange={textvalue}
             spellCheck="true"
             value={newText}
           ></textarea>
           {newText && (
             <button
-              className="absolute top-1 right-0 mt-2 mr-9 px-2 py-1 border text-white text-xs rounded hover:bg-gray-800"
+              className="absolute top-1 right-0 mt-2 mr-8 px-2 py-1 border-t-2 border-b-2 border-[#ddeff0] text-xs rounded hover:bg-[#1A2C32]"
               onClick={handleClear}
             >
               Borrar
             </button>
           )}
         </div>
-        <div className="flex items-center justify-between px-3 py-2 border-t border-gray-600">
+        <div className="flex items-center justify-between px-3 py-2">
           <CopyBtn textCopied={newText} />
-          <p className="text-xs text-gray-400">
-            <span className="text-white">{lettersCount}</span>{" "}
+          <p className="text-xs">
+            <span>{lettersCount}</span>{" "}
             {`${lettersCount === 1 ? "Letra" : "Letras"} | `}
-            <span className="text-white">{wordsCount}</span>{" "}
+            <span>{wordsCount}</span>{" "}
             {`${wordsCount === 1 ? "Palabra" : "Palabras"} | `}
-            <span className="text-white">{lineCount}</span>{" "}
-            {`${lineCount === 1 ? "Línea" : "Líneas"}`}
+            <span>{lineCount}</span> {`${lineCount === 1 ? "Línea" : "Líneas"}`}
           </p>
         </div>
       </form>

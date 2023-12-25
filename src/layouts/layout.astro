@@ -2,11 +2,12 @@
 import "../styles/global.css";
 import BuyMeACoffeList from "../components/BuyMeACoffeList.astro";
 import Hotjar from "../components/Hotjar.astro";
+import Fonts from "../components/fonts/Fonts.astro"
 
 const metadata = {
-  title: "Convertidor de Texto: Mayúsculas a Minúsculas | Herramienta Online",
+  title: "Convertidor de Texto: Mayúsculas a Minúsculas | Online",
   description:
-    "Convierte texto a mayúsculas o minúsculas fácilmente con nuestra herramienta online. Introduce tu texto y elige la opción para una conversión rápida y sencilla. ¡Haz clic ahora!",
+    "Convierte texto a mayúsculas o minúsculas fácilmente con nuestra herramienta online. Introduce tu texto y elige la opción para una conversión rápida y sencilla.",
   url: "https://minusculasymayusculas.com/",
   urlimg: "https://minusculasymayusculas.com/logo.png",
   ogdescription: "Convierte texto a mayúsculas o minúsculas con nuestra herramienta online",
@@ -26,19 +27,15 @@ const metadata = {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg">
     <link rel="canonical" href={metadata.url} />
+    <Fonts />
     <Hotjar />
+
+    <!-- Facebook Meta Tags -->
     <meta property="og:title" content={metadata.title} />
     <meta property="og:description" content={metadata.description} />
     <meta property="og:image" content={metadata.urlimg} />
-    <meta property="og:url" content={metadata.url} />
     <meta property="og:type" content={metadata.type} />
-
-    <!-- Facebook Meta Tags -->
     <meta property="og:url" content={metadata.url} />
-    <meta property="og:type" content={metadata.type} />
-    <meta property="og:title" content={metadata.description} />
-    <meta property="og:description" content={metadata.description} />
-    <meta property="og:image" content={metadata.urlimg} />
     <meta property="og:site_name" content={metadata.sitename} />
 
     <!-- Twitter Meta Tags -->
