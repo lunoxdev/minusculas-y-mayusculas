@@ -1,8 +1,9 @@
 ---
 import "../styles/global.css";
+import Font from "../components/fonts/Font.astro";
+import GTMHead from "../components/GTM/GTMHead.astro";
+import GTMBody from "../components/GTM/GTMBody.astro";
 import BuyMeACoffeList from "../components/BuyMeACoffeList.astro";
-import Hotjar from "../components/Hotjar.astro";
-import Font from "../components/fonts/Font.astro"
 
 const metadata = {
   title: "Convertidor de Texto: Mayúsculas a Minúsculas | Online",
@@ -10,25 +11,25 @@ const metadata = {
     "Convierte texto a mayúsculas o minúsculas fácilmente con nuestra herramienta online. Introduce tu texto y elige la opción para una conversión rápida y sencilla.",
   url: "https://minusculasymayusculas.com/",
   urlimg: "https://minusculasymayusculas.com/logo.png",
-  ogdescription: "Convierte texto a mayúsculas o minúsculas con nuestra herramienta online",
+  ogdescription:
+    "Convierte texto a mayúsculas o minúsculas con nuestra herramienta online",
   type: "website",
   sitename: "Mayúsculas a Minúsculas",
   creator: "Lunox | Moises Obando",
-
 };
 ---
 
 <html lang="es">
   <head>
+    <GTMHead />
+    <Font />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{metadata.title}</title>
     <meta name="description" content={metadata.description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <link rel="canonical" href={metadata.url} />
-    <Font />
-    <Hotjar />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:title" content={metadata.title} />
@@ -39,16 +40,17 @@ const metadata = {
     <meta property="og:site_name" content={metadata.sitename} />
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content={metadata.url} />
     <meta property="twitter:domain" content={metadata.url} />
     <meta property="twitter:url" content={metadata.url} />
     <meta name="twitter:title" content={metadata.title} />
     <meta name="twitter:description" content={metadata.description} />
     <meta name="twitter:image" content={metadata.urlimg} />
-    <meta name="twitter:creator" content={metadata.creator}>
+    <meta name="twitter:creator" content={metadata.creator} />
   </head>
   <body class="min-h-screen flex justify-center items-center p-3">
+    <GTMBody />
     <div class="max-w-full sm:max-w-screen-md mx-auto">
       <main>
         <slot />
