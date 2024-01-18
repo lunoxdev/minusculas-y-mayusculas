@@ -52,11 +52,9 @@ const metadata = {
   <body class="relative">
     <GTMBody />
     <div
-      class="absolute bg-fixed top-0 z-[-2] w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+      class="absolute bg-fixed top-0 z-[-2] flex flex-col justify-start sm:justify-center items-start sm:items-center p-4 min-w-full h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
-      <div
-        class="max-w-screen-lg min-h-screen flex flex-col justify-center mx-auto p-4"
-      >
+      <div class="max-w-screen-lg mt-12 sm:mt-0">
         <main>
           <slot />
         </main>

@@ -53,7 +53,7 @@ const TextArea = () => {
         ></textarea>
         {newText && (
           <button
-            className="absolute top-1 right-0 mt-2 mr-5 px-2 py-1 text-sm rounded-md hover:bg-gray-700"
+            className="absolute top-1 right-0 mt-2 mr-5 px-2 py-1 text-sm rounded-md hover:bg-gray-700 shadow-white/20 shadow-sm"
             onClick={handleClear}
           >
             Borrar
