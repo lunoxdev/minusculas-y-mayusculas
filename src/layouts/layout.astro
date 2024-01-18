@@ -23,8 +23,8 @@ const metadata = {
   <head>
     <GTMHead />
     <Font />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{metadata.title}</title>
     <meta name="description" content={metadata.description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -49,15 +49,21 @@ const metadata = {
     <meta name="twitter:image" content={metadata.urlimg} />
     <meta name="twitter:creator" content={metadata.creator} />
   </head>
-  <body class="min-h-screen flex justify-center items-center p-3">
+  <body class="relative">
     <GTMBody />
-    <div class="max-w-full sm:max-w-screen-md mx-auto">
-      <main>
-        <slot />
-      </main>
-      <footer class="flex justify-center items-center">
-        <BuyMeACoffeList />
-      </footer>
+    <div
+      class="absolute bg-fixed top-0 z-[-2] w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+    >
+      <div
+        class="max-w-screen-lg min-h-screen flex flex-col justify-center mx-auto p-4"
+      >
+        <main>
+          <slot />
+        </main>
+        <footer class="flex justify-center items-center">
+          <BuyMeACoffeList />
+        </footer>
+      </div>
     </div>
   </body>
 </html>

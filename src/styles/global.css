@@ -1,10 +1,6 @@
-/* Color palette
-F2F9F9, DDEFF0, BFE0E2, 92CACE, 5FAAB1, 
-438E96, 3B757F, 356169, 325158, 2D464C, 1A2C32 */
-
 body {
-  background: linear-gradient(to right, #3b757f, #1a2c32);
   color: white;
+  overscroll-behavior: none;
 }
 
 h1 {

@@ -27,11 +27,13 @@ const ConvertBtn = ({ title, convertTo, setNewText }) => {
 
   return (
     <>
-      <button
-        onClick={handleClick}
-        className="py-3 w-full text-sm rounded-md border-t-2 border-b-2 border-[#3B757F] hover:scale-105 hover:font-bold bg-gradient-to-r from-[#1A2C32] to-[#2D464C]"
-      >
-        {title}
+      <button className="relative mt-4" onClick={handleClick}>
+        <div className="absolute top-0 flex w-full justify-center">
+          <div className="h-[1px] animate-border-width rounded-full bg-gradient-to-r from-[rgba(17,17,17,0)] via-white to-[rgba(17,17,17,0)] transition-all duration-1000" />
+        </div>
+        <div className="block text-center text-balance h-full w-full rounded-lg border border-slate-800 px-3 py-3 focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-50 hover:bg-gray-900">
+          {title}
+        </div>
       </button>
     </>
   );

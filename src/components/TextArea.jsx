@@ -42,25 +42,23 @@ const TextArea = () => {
 
   return (
     <div>
-      <form className="w-full mt-5 rounded-lg bg-[#1a2c32] shadow-[#356169] shadow-md relative">
-        <div className="px-4 py-2 rounded-t-lg bg-[#1e3239] border-b-2 border-[#325158]">
-          <textarea
-            rows="4"
-            className="w-full h-52 text-sm outline-none pr-24 py-3 bg-[#1e3239] placeholder:text-[#ddeff0]"
-            placeholder="Coloque su texto aquí..."
-            onChange={textvalue}
-            spellCheck="true"
-            value={newText}
-          ></textarea>
-          {newText && (
-            <button
-              className="absolute top-1 right-0 mt-2 mr-8 px-2 py-1 border-t-2 border-b-2 border-[#ddeff0] text-xs rounded hover:bg-[#325158]"
-              onClick={handleClear}
-            >
-              Borrar
-            </button>
-          )}
-        </div>
+      <form className="relative w-full mt-8 sm:mt-14 rounded-lg shadow-sm shadow-white/20 divide-y-2 divide-white/10">
+        <textarea
+          rows="4"
+          className="w-full h-40 sm:h-72 outline-none pr-24 bg-gradient-to-b from-[#202030]/95 to-[#0A0A0A] py-3 rounded-md p-4 placeholder:text-gray-300"
+          placeholder="Coloque el texto aquí..."
+          onChange={textvalue}
+          spellCheck="true"
+          value={newText}
+        ></textarea>
+        {newText && (
+          <button
+            className="absolute top-1 right-0 mt-2 mr-5 px-2 py-1 text-sm rounded-md hover:bg-gray-700"
+            onClick={handleClear}
+          >
+            Borrar
+          </button>
+        )}
         <div className="flex items-center justify-between px-3 py-2">
           <CopyBtn textCopied={newText} />
           <p className="text-xs">
