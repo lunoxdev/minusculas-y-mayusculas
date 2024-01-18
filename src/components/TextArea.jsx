@@ -42,7 +42,7 @@ const TextArea = () => {
 
   return (
     <div>
-      <form className="relative w-full mt-8 sm:mt-14 rounded-lg shadow-sm shadow-white/20 divide-y-2 divide-white/10">
+      <form className="relative w-full mt-8 sm:mt-12 rounded-lg shadow-sm shadow-white/20 divide-y-2 divide-white/10">
         <textarea
           rows="4"
           className="w-full h-40 sm:h-72 outline-none pr-24 bg-gradient-to-b from-[#202030]/95 to-[#0A0A0A] py-3 rounded-md p-4 placeholder:text-gray-300"
