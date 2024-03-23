@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/layout.astro";
 import TextArea from "../components/TextArea.jsx";
+import PeWorld from "../assets/PeWorld.astro";
+import LatamWorld from "../assets/LatamWorld.astro";
 ---
 
 <Layout>
@@ -17,7 +19,47 @@ import TextArea from "../components/TextArea.jsx";
       segundos.
     </p>
   </section>
-  <div>
+  <div class="mb-7">
     <TextArea client:load />
+  </div>
+  <hr />
+  <div class="flex flex-col space-y-2 justify-center items-center mt-5">
+    <span class="text-center text-sm tracking-tight text-pretty"
+      >Visítanos también en:
+    </span>
+    <div
+      class="flex flex-col mx-auto sm:flex-row space-y-2 sm:space-y-0 space-x-0 sm:space-x-5 justify-center items-center mt-5"
+    >
+      <a
+        href="https://micasadeapuesta.com/"
+        title="Mi casa de apuesta LATAM"
+        target="_blank"
+        rel="external noopener noreferrer follow"
+      >
+        <span
+          class="relative flex flex-row mx-auto justify-center items-center gap-2 bg-[linear-gradient(#616161,#616161),linear-gradient(#8d8daa,#8d8daa)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
+          aria-label="Ir al sitio web: Mi casa de apuestas LATAM"
+          typeof="button"
+        >
+          Mi casa de apuesta LATAM
+          <LatamWorld />
+        </span>
+      </a>
+      <a
+        href="https://micasadeapuesta.pe/"
+        title="Mi casa de apuesta Perú"
+        target="_blank"
+        rel="external noopener noreferrer follow"
+      >
+        <span
+          class="relative flex flex-row mx-auto justify-center items-center gap-2 bg-[linear-gradient(#616161,#616161),linear-gradient(#8d8daa,#8d8daa)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size] duration-300 hover:bg-[0_2px,100%_2px]"
+          aria-label="Ir al sitio web: Mi casa de apuestas LATAM"
+          typeof="button"
+        >
+          Mi casa de apuesta Perú
+          <PeWorld />
+        </span>
+      </a>
+    </div>
   </div>
 </Layout>

@@ -42,10 +42,10 @@ const TextArea = () => {
 
   return (
     <div>
-      <form className="relative w-full mt-8 sm:mt-12 rounded-lg shadow-sm shadow-white/20 divide-y-2 divide-white/10">
+      <form className="relative w-full mt-8 sm:mt-7 rounded-lg shadow-sm shadow-white/20 divide-y-2 divide-white/10">
         <textarea
           rows="4"
-          className="w-full h-40 sm:h-72 outline-none pr-24 bg-gradient-to-b from-[#202030]/95 to-[#0A0A0A] py-3 rounded-md p-4 placeholder:text-gray-300"
+          className="w-full h-40 sm:h-52 outline-none pr-24 bg-gradient-to-b from-[#202030]/95 to-[#0A0A0A] py-3 rounded-md p-4 placeholder:text-gray-300"
           placeholder="Coloque el texto aquí..."
           onChange={textvalue}
           spellCheck="true"
@@ -70,7 +70,7 @@ const TextArea = () => {
           </p>
         </div>
       </form>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-7">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-3">
         <ConvertBtn
           title="Convertir a Mayúscula"
           convertTo="mayusculas"

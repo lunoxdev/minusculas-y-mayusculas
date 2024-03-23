@@ -31,7 +31,7 @@ const ConvertBtn = ({ title, convertTo, setNewText }) => {
         <div className="absolute top-0 flex w-full justify-center">
           <div className="h-[1px] animate-border-width rounded-full bg-gradient-to-r from-[rgba(17,17,17,0)] via-white to-[rgba(17,17,17,0)] transition-all duration-1000" />
         </div>
-        <div className=" flex flex-row justify-center items-center text-center text-sm sm:text-base text-balance h-full w-full rounded-lg border border-white/20 px-3 py-3 focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-50 hover:bg-gray-900">
+        <div className="flex flex-row justify-center items-center text-center text-xs text-balance h-full w-full rounded-lg border border-white/20 px-3 py-3 focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-50 hover:bg-gray-900">
           {title}
         </div>
       </button>
