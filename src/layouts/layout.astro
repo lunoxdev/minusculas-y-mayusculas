@@ -1,8 +1,6 @@
 ---
 import "../styles/global.css";
 import Font from "../components/fonts/Font.astro";
-import GTMHead from "../components/GTM/GTMHead.astro";
-import GTMBody from "../components/GTM/GTMBody.astro";
 
 const metadata = {
   title: "Convertidor de Texto: Mayúsculas a Minúsculas | Online",
@@ -20,7 +18,6 @@ const metadata = {
 
 <html lang="es">
   <head>
-    <GTMHead />
     <Font />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,7 +46,6 @@ const metadata = {
     <meta name="twitter:creator" content={metadata.creator} />
   </head>
   <body class="relative">
-    <GTMBody />
     <div
       class="absolute bg-fixed top-0 z-[-2] flex flex-col justify-start sm:justify-center items-start sm:items-center p-4 min-w-full h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >

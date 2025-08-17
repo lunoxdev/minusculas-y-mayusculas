@@ -1,13 +1,13 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import CopyBtn from "./CopyBtn";
-import ConvertBtn from "../components/ConvertBtn";
+import ConvertBtn from "./ConvertBtn";
 
 const TextArea = () => {
-  const [newText, setNewText] = useState("");
-  const [lineCount, setLineCount] = useState(0);
+  const [newText, setNewText] = useState<string>("");
+  const [lineCount, setLineCount] = useState<number>(0);
 
   // Guarda el nuevo valor en modifiedText
-  const textvalue = (e) => {
+  const textvalue = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const dinamicText = e.target.value;
     setNewText(dinamicText);
 
@@ -17,13 +17,13 @@ const TextArea = () => {
   };
 
   // Contador de letras
-  const countLetters = (newText) => {
+  const countLetters = (newText: string) => {
     const letters = newText.replace(/\s/g, "");
     return letters.length;
   };
 
   // Contador de palabras y si no hay, devuelve 0 palabras
-  const countWords = (newText) => {
+  const countWords = (newText: string) => {
     if (newText.trim() === "") {
       return 0;
     }
@@ -44,12 +44,12 @@ const TextArea = () => {
     <div>
       <form className="relative w-full mt-8 sm:mt-7 rounded-lg shadow-sm shadow-white/20 divide-y-2 divide-white/10">
         <textarea
-          rows="4"
-          className="w-full h-72 outline-none pr-24 bg-gradient-to-b from-[#202030]/95 to-[#0A0A0A] py-3 rounded-md p-4 placeholder:text-gray-300"
+          rows={4}
           placeholder="Coloque el texto aquí..."
           onChange={textvalue}
           spellCheck="true"
           value={newText}
+          className="w-full h-72 outline-none pr-24 bg-gradient-to-b from-[#202030]/95 to-[#0A0A0A] py-3 rounded-md p-4 placeholder:text-gray-300"
         ></textarea>
         {newText && (
           <button

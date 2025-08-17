@@ -1,7 +1,11 @@
 import { useCallback, useState } from "react";
 
-const CopyBtn = ({ textCopied }) => {
-  const [copied, setCopied] = useState(false);
+interface CopyBtnProps {
+  textCopied: string;
+}
+
+const CopyBtn = ({ textCopied }: CopyBtnProps) => {
+  const [copied, setCopied] = useState<boolean>(false);
 
   const handleCopyText = useCallback(() => {
     navigator.clipboard

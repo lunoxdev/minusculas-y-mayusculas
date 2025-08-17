@@ -1,6 +1,13 @@
-const ConvertBtn = ({ title, convertTo, setNewText }) => {
+interface CopyBtnProps {
+  title: string;
+  convertTo: string;
+  setNewText: (text: string) => void;
+}
+
+const ConvertBtn = ({ title, convertTo, setNewText }: CopyBtnProps) => {
   const handleClick = () => {
     const textArea = document.querySelector("textarea");
+    if (!textArea) return; // sale si es null
     const currentText = textArea.value;
 
     let newText;
